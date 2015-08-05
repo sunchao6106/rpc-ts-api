@@ -1,3 +1,4 @@
+     
      rpc-ts is a java rpc system which based on the dubbo of alibaba. But the underlying serialization framework, combined with google's own protobuf, facebook of thrift, and the fastest serialization framework written in java field kryo a serialization framework varint serialization, and dubbo and protobuf in Ascii character, enum type, protobuf (var int, long) and so do some improvements, in a circular reference, the sequence of transmission of the remote object (duplicate object local, remote serialization), the id of a variable length write fully qualified class name in lieu of writing class optimize the byte stream as small as possible.
      In the RPC client skeleton, the server stub aspect, the continuation of the dubbo use javassist dynamic bytecode generation technology, and several bugg dubbo made changes. Himself has tried to complete the dynamic reference reflect asm byte code generation,
 However, because the code is too big, and no javassist package put together a string of convenience to give up.
@@ -34,8 +35,8 @@ However, because the code is too big, and no javassist package put together a st
  * </p>         +--------+------------------------+</p>
  * 
  * 
- * The message header, which has the delimited length of 12.
- * More detail, please @see {@link Packet}
+ * The message header, which has the delimited length of 19.
+ * More detail, please @see {@link PacketHeader}
  * 
  * @author <a href="mailto:sunchao6106@163.com">sunchao</a>
  *
