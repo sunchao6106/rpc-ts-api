@@ -1,0 +1,1 @@
+javassist = com.sunchao.rpc.api.proxy.impl.JavassistProxyBuilder
